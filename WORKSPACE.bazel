@@ -4,7 +4,7 @@ workspace(name = "angular_bazel_example")
 go_repository(
     name = "com_github_bitly_go-nsq",
     importpath = "github.com/bitly/go-nsq",
-    tag = "v1.0.5"
+    tag = "v1.0.8"
 )
 
 go_repository(
@@ -94,7 +94,7 @@ http_archive(
     strip_prefix = "bazel-skylib-0.5.0",
     urls = [
         "https://mirror.bazel.build/github.com/bazelbuild/bazel-skylib/archive/0.5.0.tar.gz",
-        "https://github.com/bazelbuild/bazel-skylib/archive/0.5.0.tar.gz",
+        "https://github.com/bazelbuild/bazel-skylib/archive/1.0.3.tar.gz",
     ],
 )
 
