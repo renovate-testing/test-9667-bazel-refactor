@@ -22,7 +22,7 @@ go_repository(
 git_repository(
     name = "build_bazel_rules_nodejs",
     remote = "https://github.com/bazelbuild/rules_nodejs.git",
-    tag = "0.3.1",
+    tag = "0.42.3",
 )
 
 load("@build_bazel_rules_nodejs//:defs.bzl", "node_repositories")
@@ -31,7 +31,7 @@ node_repositories(package_json = ["//:package.json"])
 git_repository(
     name = "build_bazel_rules_typescript",
     remote = "https://github.com/bazelbuild/rules_typescript.git",
-    tag = "0.6.1",
+    tag = "0.23.2",
 )
 
 load("@build_bazel_rules_typescript//:defs.bzl", "ts_repositories")
@@ -68,7 +68,7 @@ local_repository(
 git_repository(
     name = "io_bazel_rules_sass",
     remote = "https://github.com/bazelbuild/rules_sass.git",
-    tag = "0.0.3",
+    tag = "0.1.0",
 )
 
 load("@io_bazel_rules_sass//sass:sass.bzl", "sass_repositories")
@@ -90,11 +90,11 @@ http_archive(
 
 http_archive(
     name = "bazel_skylib",
-    sha256 = "b5f6abe419da897b7901f90cbab08af958b97a8f3575b0d3dd062ac7ce78541f",
-    strip_prefix = "bazel-skylib-0.5.0",
+    sha256 = "9245b0549e88e356cd6a25bf79f97aa19332083890b7ac6481a2affb6ada9752",
+    strip_prefix = "bazel-skylib-0.9.0",
     urls = [
-        "https://mirror.bazel.build/github.com/bazelbuild/bazel-skylib/archive/0.5.0.tar.gz",
-        "https://github.com/bazelbuild/bazel-skylib/archive/0.5.0.tar.gz",
+        "https://mirror.bazel.build/github.com/bazelbuild/bazel-skylib/archive/0.9.0.tar.gz",
+        "https://github.com/bazelbuild/bazel-skylib/archive/0.9.0.tar.gz",
     ],
 )
 
