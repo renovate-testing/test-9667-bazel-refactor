@@ -40,18 +40,18 @@ ts_repositories()
 
 http_archive(
     name="distroless",
-    sha256="f7a6ecfb8174a1dd4713ea3b21621072996ada7e8f1a69e6ae7581be137c6dd6",
-    strip_prefix="distroless-446923c3756ceeaa75888f52fcbdd48bb314fbf8",
-    urls=["https://github.com/GoogleContainerTools/distroless/archive/446923c3756ceeaa75888f52fcbdd48bb314fbf8.tar.gz"]
+    sha256="c7f15580eacfab5ac7e652758a8ca672105517a8ccae9f8db1c533886d4d9f7f",
+    strip_prefix="distroless-2e539660094d9c2910f6134df1d0d3919479c393",
+    urls=["https://github.com/GoogleContainerTools/distroless/archive/2e539660094d9c2910f6134df1d0d3919479c393.tar.gz"]
 )
 
 http_archive(
   name = "bazel_toolchains",
-    sha256 = "4b1468b254a572dbe134cc1fd7c6eab1618a72acd339749ea343bd8f55c3b7eb",
-    strip_prefix = "bazel-toolchains-d665ccfa3e9c90fa789671bf4ef5f7c19c5715c4",
+    sha256 = "93282ee0dd9bc1942fbdf781520495c472ce958d4756e89ed3d5d024e7b71d66",
+    strip_prefix = "bazel-toolchains-27f2db256e54e5748ee1cd9485ccd0d5444bf1c6",
     urls = [
-        "https://mirror.bazel.build/github.com/bazelbuild/bazel-toolchains/archive/d665ccfa3e9c90fa789671bf4ef5f7c19c5715c4.tar.gz",
-        "https://github.com/bazelbuild/bazel-toolchains/archive/d665ccfa3e9c90fa789671bf4ef5f7c19c5715c4.tar.gz",
+        "https://mirror.bazel.build/github.com/bazelbuild/bazel-toolchains/archive/27f2db256e54e5748ee1cd9485ccd0d5444bf1c6.tar.gz",
+        "https://github.com/bazelbuild/bazel-toolchains/archive/27f2db256e54e5748ee1cd9485ccd0d5444bf1c6.tar.gz",
     ],
 )
 
@@ -121,7 +121,7 @@ container_pull(
 
 http_file(
     name="distroless",
-    sha256="f7a6ecfb8174a1dd4713ea3b21621072996ada7e8f1a69e6ae7581be137c6dd6",
-    strip_prefix="distroless-446923c3756ceeaa75888f52fcbdd48bb314fbf8",
-    urls=["https://github.com/GoogleContainerTools/distroless/archive/446923c3756ceeaa75888f52fcbdd48bb314fbf8.tar.gz"]
+    sha256="c7f15580eacfab5ac7e652758a8ca672105517a8ccae9f8db1c533886d4d9f7f",
+    strip_prefix="distroless-2e539660094d9c2910f6134df1d0d3919479c393",
+    urls=["https://github.com/GoogleContainerTools/distroless/archive/2e539660094d9c2910f6134df1d0d3919479c393.tar.gz"]
 )
